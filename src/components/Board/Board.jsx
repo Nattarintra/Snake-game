@@ -48,7 +48,7 @@ const Board = () => {
   const [foodShouldReverseDirection, setFoodShouldReverseDirection] = useState(false)
 
   useEffect(() => {
-    window.addEventListener("keypress", e => {
+    window.addEventListener("keydown", e => {
       handleKeydown(e)
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
